@@ -4,7 +4,7 @@ window.addEventListener("load", function(){
         const sendRequest = new XMLHttpRequest();
         const signupInfo = new URLSearchParams(new FormData(form));
         sendRequest.addEventListener("error", function (event){
-            alert('Submission unsuccessful! Please try again.');
+            alert('Your submission was unsuccessful! Please try again.');
         });
         sendRequest.addEventListener("load", function (event) {
             alert('Your account was created');
